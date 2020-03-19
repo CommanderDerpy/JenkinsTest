@@ -1,10 +1,10 @@
+@Library('my-shared-library') _
+
 pipeline {
     agent { docker { image 'node:6.3' } }
     stages {
-        stage('Sanity check') {
-            steps {
-                input "Does the staging environment look ok?"
-            }
+        stage('stuff) {
+              filename.checkout
         }
         stage('build') {
             steps {
