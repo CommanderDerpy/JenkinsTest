@@ -5,9 +5,6 @@ pipeline {
     stages {
         stage('stuff') {
             steps {
-                 echo 'hiii!'
-            }
-            steps {
                  maxTest 'max'
             }
         }
