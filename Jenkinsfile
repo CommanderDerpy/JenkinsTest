@@ -4,7 +4,12 @@ pipeline {
     agent { docker { image 'node:6.3' } }
     stages {
         stage('stuff') {
-              maxTest 'max'
+            steps {
+                 echo 'hiii!'
+            }
+            steps {
+                 maxTest 'max'
+            }
         }
         stage('build') {
             steps {
