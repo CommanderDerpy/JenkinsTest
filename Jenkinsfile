@@ -6,7 +6,7 @@ pipeline {
         stage('stuff') {
             steps {
                 echo 'test'
-                 //maxTest 'max'
+                maxTest 'max'
             }
         }
         stage('build') {
