@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('stuff') {
             steps {
-                 //maxTest 'max'
                 echo 'test'
+                 //maxTest 'max'
             }
         }
         stage('build') {
