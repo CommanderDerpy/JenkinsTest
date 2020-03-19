@@ -1,4 +1,4 @@
-@Library('my-shared-library') _
+@Library('JenkinsLibrary') _
 
 pipeline {
     agent { docker { image 'node:6.3' } }
