@@ -40,10 +40,10 @@ pipeline {
             }
         }
         failure {
-            slackSend channel: "#max-bot", color: "bad", message: ":x: Bad"
+            slackSend channel: "#max-bot", color: "red", message: ":x: Bad"
         }
         unstable {
-            slackSend channel: "#max-bot", color: "warning", message: ":exclamation: You have failing tests"
+            slackSend channel: "#max-bot", color: "warning", message: ":warning: You have failing tests"
         }
     }
 }
