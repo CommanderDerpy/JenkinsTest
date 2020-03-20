@@ -1,4 +1,4 @@
-@Library('test-lib@master')_
+@Library('test-lib')_
 
 pipeline {
     agent { docker { image 'node:6.3' } }
