@@ -43,7 +43,7 @@ pipeline {
             slackSend channel: "#max-bot", color: "bad", message: ":x: Bad"
         }
         unstable {
-            slackSend channel: "#max-bot", color: "bad", message: ":exlamation: You have failing tests"
+            slackSend channel: "#max-bot", color: "bad", message: ":exclamation: You have failing tests"
         }
     }
 }
