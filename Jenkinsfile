@@ -6,7 +6,7 @@ pipeline {
         stage('Demo') {
             steps {
                 echo 'Hello world'
-                sayHello 'Dave'
+                sayHello.call 'Dave'
             }
         }
         stage('build') {
