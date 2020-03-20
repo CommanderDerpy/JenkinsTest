@@ -4,7 +4,7 @@ pipeline {
     agent { docker { image 'node:6.3' } }
     stages {
         stage('Demo') {
-            step {
+            steps {
                 echo 'Hello world'
                 sayHello 'Dave'
             }
