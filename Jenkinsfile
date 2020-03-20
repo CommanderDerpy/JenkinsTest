@@ -15,6 +15,18 @@ pipeline {
                 }
             }
         }
+        stage('try') {
+            steps {
+                echo 'Hello world'
+                script {
+                    try {
+                      sh('false')
+                    } catch (ex) {
+                      unstable('Script failed!')
+                    }
+                }
+            }
+        }
         stage('build') {
             steps {
                 sh 'npm --version'
