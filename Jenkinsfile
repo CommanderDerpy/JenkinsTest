@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo 'Hello world'
                 script {
-                    maxTest.call 'Dave'
+                    maxTest 'Max'
                 }
             }
         }
