@@ -41,7 +41,7 @@ pipeline {
             }
         }
         failure {
-            slackSend channel: "#max-bot", color: "#ff0000", message: ":x: Bad @Max"
+            slackSend channel: "#max-bot", color: "#ff0000", message: ":x: Bad <!Max>"
         }
         unstable {
             slackSend channel: "#max-bot", color: "warning", message: ":warning: You have failing tests @Max"
