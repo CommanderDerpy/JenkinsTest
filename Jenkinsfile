@@ -9,6 +9,7 @@ pipeline {
         stage('Demo') {
             steps {
                 echo 'Hello world'
+                error("whoops")
                 script {
                     log.info params.VERSION
                     log.warning params.VERSION
