@@ -10,8 +10,8 @@ pipeline {
             steps {
                 echo 'Hello world'
                 script {
-                    log.info ${params.VERSION}
-                    log.warning ${params.VERSION}
+                    log.info params.VERSION
+                    log.warning params.VERSION
                 }
             }
         }
