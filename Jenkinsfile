@@ -37,14 +37,14 @@ pipeline {
     post {
         success {
             script {
-                slackSend channel: "#max-bot", color: "good", message: ":white_check_mark: Good!"
+                slackSend channel: "#max-bot", color: "good", message: ":white_check_mark: Good! @Max"
             }
         }
         failure {
-            slackSend channel: "#max-bot", color: "#ff0000", message: ":x: Bad"
+            slackSend channel: "#max-bot", color: "#ff0000", message: ":x: Bad @Max"
         }
         unstable {
-            slackSend channel: "#max-bot", color: "warning", message: ":warning: You have failing tests"
+            slackSend channel: "#max-bot", color: "warning", message: ":warning: You have failing tests @Max"
         }
     }
 }
