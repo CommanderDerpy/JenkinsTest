@@ -21,4 +21,15 @@ pipeline {
             }
         }
     }
+    post {
+    success {
+      script {
+          slackSend channel: "#max-bot", color: "good", message: ":white_check_mark: Good!"
+        }
+      }
+    }
+    failure {
+      slackSend channel: "#max-bot", color: "bad", message: ":x: Bad"
+    }
+  }
 }
